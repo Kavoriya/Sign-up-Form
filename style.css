@@ -1,0 +1,47 @@
+:root {
+  font-size: 16px;
+  --grey-color: #444444;
+  --red-color: #DA0037;
+  --white-color: #EDEDED;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  height: inherit;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, black 90%, var(--red-color) 100%);
+}
+
+.side-image-div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.hellfire-image {
+  display: block;
+  width: 480px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.intro-div, .form-div, .bottom-div {
+  width: 100%;
+  flex-grow: 1;
+  border: 1px solid white;
+}
