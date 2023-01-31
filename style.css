@@ -26,12 +26,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .hellfire-image {
   display: block;
   width: 480px;
+}
+
+address {
+  color: var(--white-color);
+  text-align: center;
+}
+
+a {
+  color: var(--white-color);
+}
+
+a:active {
+  color: var(--red-color);
 }
 
 main {
@@ -41,7 +53,87 @@ main {
 }
 
 .intro-div, .form-div, .bottom-div {
-  width: 100%;
   flex-grow: 1;
-  border: 1px solid white;
+  flex-basis: 400px;
+  /* border: 1px solid white; */
+}
+
+h1 {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 4rem;
+}
+
+h1 > span {
+  color: var(--red-color);
+}
+
+.intro-div > p {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.form-div {
+  padding: 15px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 230px;
+  padding: 20px;
+  box-shadow: 10px 5px 6px var(--red-color);
+}
+
+li {
+  padding: 3px;
+}
+
+label {
+  display: inline-block;
+  color: var(--red-color);
+  font-size: 2rem;
+  width: 200px;
+  text-align: end;
+  padding-right: 5px;
+}
+
+input {
+  height: 2.3rem;
+  font-size: 1.8rem;
+  border: 1px solid var(--white-color);
+  border-radius: 2px;
+  background-color: black;
+  color: var(--white-color);
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--red-color);
+}
+
+button {
+  font-size: 2rem;
+  width: 270px;
+  height: 80px;
+  margin-top: 30px;
+  margin-left: 20px;
+  background-color: var(--red-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 10px;
+}
+
+button:active {
+  background-color: var(--white-color);
+  color: var(--red-color);
+}
+
+.bottom-div > p {
+  color: var(--white-color);
+  font-size: 2rem;
+  text-align: center;
 }
