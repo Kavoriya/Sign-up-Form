@@ -8,37 +8,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="side-image-div">
-    <img class="hellfire-image" src="/hellfire-image.jpg" alt="Hellfire Club Logo">
-    <address class="author">Image by <a href="https://posterspy.com/posters/hellfire-club/">tomwalker</a></address>
-  </div>
   <main>
-    <div class="intro-div">
-      <h1>So you want to join <span>Hellfire Club?</span></h1>
-      <p>Sign up below!</p>
+    <div class="side-image-div">
+      <img class="hellfire-image" src="hellfire-image.jpg" alt="Hellfire Club Logo">
+      <address class="author">Image by <a href="https://posterspy.com/posters/hellfire-club/">tomwalker</a></address>
     </div>
-    <div class="form-div">
-      <form action="">
-        <ul>
-          <li>
-            <label for="first-name">First Name: </label>
-            <input type="text" id="first-name">
-          </li>
-          <li>
-            <label for="last-name">Last Name: </label>
-            <input type="text" id="last-name">
-          </li>
-          <li>
-            <label for="age">Age: </label>
-            <input type="text" id="age">
-          </li>
-        </ul>
-        <button type="button">Join Hellfire Club</button>
-      </form>
-    </div>
-    <div class="bottom-div">
-      <p>Hawkins, Indiana</p>
-    </div>
+    <div class="main-div">
+      <div class="intro-div">
+        <h1>So you want to join <span>Hellfire Club?</span></h1>
+        <p>Sign up below!</p>
+      </div>
+      <div class="form-div">
+        <form action="#">
+          <ul>
+            <li>
+              <label for="first-name">First Name: </label>
+              <input type="text" id="first-name" name="first_name">
+            </li>
+            <li>
+              <label for="last-name">Last Name: </label>
+              <input type="text" id="last-name" name="last_name">
+            </li>
+            <li>
+              <label for="age">Age: </label>
+              <input type="text" id="age" name="age">
+            </li>
+          </ul>
+          <button type="button">Join Hellfire Club</button>
+        </form>
+      </div>
+    </div>  
   </main>
+  <footer>
+    <p>Hawkins, Indiana</p>
+  </footer>
 </body>
 </html>
